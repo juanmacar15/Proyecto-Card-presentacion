@@ -1,25 +1,12 @@
-import { Header } from "./Header";
 
-export const References = () => {
+export const References = ({ titulo, link }) => {
     return (
         <div className=" w-full ">
-            <p className=" text-White text-[12px] text-center">"El código funciona, no sé por qué"</p>
-            <div className="text-center">
-                <a href="https://www.instagram.com/juanmacar15/" target="_blank">
-                    <p className="py-[8px] my-[10px] rounded-md bg-GrayButton cursor-pointer text-White font-bold text-[12px] hover:bg-Green hover:text-GrayButton">Instagram</p>
-                </a>
-                <a href="https://twitter.com/juanmacar_" target="_blank">
-                    <p className="py-[8px] my-[10px] rounded-md bg-GrayButton cursor-pointer text-White font-bold text-[12px] hover:bg-Green hover:text-GrayButton">X</p>
-                </a>
-                <a href="https://github.com/juanmacar15" target="_blank">
-                    <p className="py-[8px] my-[10px] rounded-md bg-GrayButton cursor-pointer text-White font-bold text-[12px] hover:bg-Green hover:text-GrayButton">GitHub</p>
-                </a>
-                
-                <a href="https://www.linkedin.com/in/juanmacar/" target="_blank">
-                    <p className="py-[8px] my-[10px] rounded-md bg-GrayButton cursor-pointer text-White font-bold text-[12px] hover:bg-Green hover:text-GrayButton">Linkedin</p>
-                </a>
+                <div className="text-center">
+                    <a href={link} target="_blank">
+                        <p className=" p-3 my-[5px] rounded-md bg-GrayButton cursor-pointer text-White font-bold text-[12px] hover:text-black hover:bg-gradient-to-r from-Green to-lime-900 duration-300">{titulo}</p>
+                    </a>
+                </div>
             </div>
-
-        </div>
     );
 };
