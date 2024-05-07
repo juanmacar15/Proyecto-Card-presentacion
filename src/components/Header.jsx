@@ -1,7 +1,6 @@
 import img from "../assets/images/juanmacar.jpg"
 import { References } from './References'
 
-
 export const Header = () => {
 
     const refs = [
@@ -24,10 +23,10 @@ export const Header = () => {
     ]
 
     return (
-        <div className="bg-DarkGrey w-[326px] sm:w-[386px] m-auto mt-[116px] sm:mt-[116px] rounded-xl">
+        <div className="bg-DarkGrey w-[326px] sm:w-[386px] m-auto mt-[116px] sm:mt-[116px] rounded-xl hover:scale-105 duration-500">
                 <div className=" flex flex-col items-center p-[40px] ">
                     <img className=" w-[92px] rounded-full hover:scale-[1.5] duration-500 mb-5" src={img} alt="Image_profile" />
-                    <p className="text-White text-[22px] font-bold">Juan David Madrid</p>
+                    <p className="text-White text-[22px] font-bold  hover:bg-clip-text hover:text-transparent  hover:bg-gradient-to-r from-lime-900 via-lime-500 to-lime-900 hover:duration-1000 cursor-default">Juan David Madrid</p>
                     <p className="text-Green text-[12px] font-bold leading-7 ">Curumani - Cesar - Colombia</p>
                     <p className=" text-White text-[12px] text-center">"El código funciona, no sé por qué"</p>
                     < References titulo={refs[0].titulo} link={refs[0].link} />
